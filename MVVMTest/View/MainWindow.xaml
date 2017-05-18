@@ -2,6 +2,9 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:MVVMTest"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" 
+        xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" 
+        xmlns:l="http://schemas.livet-mvvm.net/2011/wpf" 
         xmlns:vm="clr-namespace:MVVMTest.ViewModel"
         Title="MainWindow" Height="350" Width="525">
     <Window.DataContext>
@@ -9,8 +12,8 @@
     </Window.DataContext>
     <Grid>
         <TextBlock VerticalAlignment="Top" HorizontalAlignment="Left"
-                   Margin="10,10,0,0" TextWrapping="Wrap"
-                   Text="{Binding Text}"/>
+                   Margin="10,10,0,0" TextWrapping="Wrap" Height="40" Width="105"
+                   Text="{Binding Text}" FontSize="16"/>
 
     </Grid>
 </Window>
